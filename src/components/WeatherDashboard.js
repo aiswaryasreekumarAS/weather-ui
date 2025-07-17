@@ -2,10 +2,10 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import WeatherCard from "./WeatherCard";
 
-// 🌍 List of cities you want to show weather for
+
 const cities = ["London", "New York", "Delhi", "Paris", "Tokyo", "Moscow"];
 
-// 🔑 Your actual OpenWeatherMap API key
+
 const API_KEY = "0d0fecd941254152395194d8d25e9649";
 
 
@@ -36,7 +36,7 @@ function WeatherDashboard() {
       const filtered = results.filter((item) => item !== null);
       setWeatherData(filtered);
 
-      // 🔍 Optional: Log the results
+      
       console.log("Weather data fetched:", filtered);
     };
 
